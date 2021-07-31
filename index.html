@@ -1,57 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
-    <title>Responsive Contact Form - Acme Web Design</title>
-</head>
-<body>
+    <title>Contact Form</title>
+  </head>
+  <body>
     <div class="container">
-        <h1 class="brand"><span>Acme</span> Web Design</h1>
-        <div class="wrapper animated bounceInLeft">
-            <div class="company-info">
-                <h3>Acme Web Design</h3>
-                <ul>
-                    <li><i class="fa fa-road" aria-hidden="true"></i></i> 44 Something Street</li>
-                    <li><i class="fa fa-phone" aria-hidden="true"></i> (555) 555-5555</li>
-                    <li><i class="fa fa-envelope" aria-hidden="true"></i> test@acme.test</li>
-                </ul>
-            </div>
-            <div class="contact">
-                <h3>Email Us</h3>
-                <form>
-                    <p>
-                        <label>Name</label>
-                        <input type="text" name="name">
-                    </p>
-                    <p>
-                        <label>Company</label>
-                        <input type="text" name="company">
-                    </p>
-                    <p>
-                        <label>email address</label>
-                        <input type="email" name="email">
-                    </p>
-                    <p>
-                        <label>Phone</label>
-                        <input type="number" name="phone">
-                    </p>
-                    <p class="full">
-                        <label>Message</label>
-                        <textarea type="text" name="message" rows="8"></textarea>
-                    </p>
-                    <p class="full">
-                        <button>Submit</button>
-                    </p>
-                </form>
-            </div>
-        </div>
+      <h1 class="brand">
+        <span>Web</span>
+        Design</h1>
+      <div class="wrapper animated bounceInLeft">
+        <div class="company-info">
+          <h3>Web Design</h3>
+          <ul>
+            <li>
+              <i class="fa fa-road" aria-hidden="true"></i>
+            </li>
+          </i>
+          44 Something Street</li>
+        <li>
+          <i class="fa fa-phone" aria-hidden="true"></i>
+          (555) 555-5555</li>
+        <li>
+          <i class="fa fa-envelope" aria-hidden="true"></i>
+          test@acme.test</li>
+      </ul>
+    </div>
+    <div class="contact">
+      <h3>Email Us</h3>
+      <!-- @TODO - validation -->
+      <form id="contactForm">
+        <p>
+          <label>Name</label>
+          <input type="text" name="name" id="name">
+        </p>
+        <p>
+          <label>Company</label>
+          <input type="text" name="company" id="company">
+        </p>
+        <p>
+          <label>email address</label>
+          <input type="text" name="email" id="email">
+        </p>
+        <p>
+          <label>Phone</label>
+          <input type="text" name="phone" id="phone">
+        </p>
+        <p class="full">
+          <label>Message</label>
+          <textarea type="text" name="message" rows="8" id="message"></textarea>
+        </p>
+        <p class="full">
+          <button type="submit">Submit</button>
+        </p>
+      </form>
     </div>
 
 
-</body>
-</html>
+
+    <!-- Add Firebase -->
+
+    <script src="https://www.gstatic.com/firebasejs/8.8.0/firebase-app.js"></script>
+
+
+    <script src="app.js"></script>
+  </body>
+</html></div></div></body></html>
