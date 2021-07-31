@@ -25,20 +25,30 @@ document.getElementById('contactForm').addEventListener('submit', submitForm);
 // this is a function declaration and is defined as soon as its surrounding function or script is executed (due to hoisting).
 function submitForm(e) {
   e.preventDefault();
-
+  
   // Get values
   const name = getInputVal('name')
   const company = getInputVal('company')
   const email = getInputVal('email')
   const phone = getInputVal('phone')
   const message = getInputVal('message')
-
+  
   console.log(name, message, email, phone, company)
-
+  
   // save Message to Firebase
   saveMessage(name, company, email, phone, message)
+  
+  // Show alert
+  document.querySelector('.alert').style.display = "block"
+
+  // Hide alert after 3s
+  setTimeout(()=> {
+    document.querySelector('.alert').style.display = "none"
+  }, 3000)
 
 
+  // Clear form
+  document.getElementById('contactForm').reset()
 }
 
 // function to get form values
@@ -75,3 +85,7 @@ function saveMessage(name, company, email, phone, message){
 
   // let's call this function when form os submitted
 }
+
+
+
+

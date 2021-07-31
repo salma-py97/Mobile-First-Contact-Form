@@ -79,6 +79,15 @@ ul{
     transition: background-color 1s ease-out;
 } 
 
+.alert {
+    text-align: center;
+    padding: 10px;
+    background-color: #79C879;
+    margin-bottom: 10px;
+    color: #fff;
+    display: none;
+}
+
 /* Large Screens */
 @media(min-width: 700px){
     .wrapper{
