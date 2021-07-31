@@ -14,7 +14,7 @@ var firebaseConfig = {
 };
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
-// firebase.analytics();
+firebase.analytics();
 
 
 
@@ -38,7 +38,7 @@ function submitForm(e) {
   // save Message to Firebase
   saveMessage(name, company, email, phone, message)
 
-  
+
 }
 
 // function to get form values
